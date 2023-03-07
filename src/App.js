@@ -1,13 +1,13 @@
+import React from 'react'
+import Game from "./components/Game"
+import Board from "./components/Board"
+import Square from "./components/Square"
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Test page App
-        </p>
-      </header>
-    </div>
-  );
+    <Game />
+  )
 }
 
 export default App;
+
