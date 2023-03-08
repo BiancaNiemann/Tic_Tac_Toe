@@ -1,19 +1,9 @@
 import React from "react" 
 import Square from "./Square"
 
-const style = {
-    border: '4px solid darkblue',
-    borderRadius: '10px',
-    width: '250px',
-    height: '250px',
-    margin: '50px auto',
-    display: 'grid',
-    gridTemplate: 'repeat(3, 1fr) / repeat(3, 1fr)'
-}
-
 export default function Board({squares, onClick}){
     return (
-        <div style={style}>
+        <div className="border-4 border-orange-900 rounded-lg mt-32 mb-8 w-64 h-64 grid grid-rows-3 grid-cols-3 ">
             {squares.map((square, i) => (
                 <Square value={square} key={i} onClick={()=> onClick(i)}/>
             ))}

@@ -1,16 +1,7 @@
 import React from "react" 
 
-const style = {
-    background: 'lightblue',
-    border: '2px solid darkblue',
-    fontSize: '30px',
-    fontWeight: '800',
-    cursor: 'pointer',
-    outline: 'none'
-}
-
 export default function Square({value, onClick}){
     return (
-        <button style={style} onClick={onClick}>{value}</button>
+        <button className="border-2 text-4xl font-bold focus:outline-none border-orange-600 cursor-pointer bg-orange-200 text-orange-900"  onClick={onClick}>{value}</button>
     )
 }

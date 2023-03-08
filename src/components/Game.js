@@ -48,13 +48,13 @@ console.log(winner)*/
     }
 
     return (
-        <>
+        <div className="bg-blue-500 flex flex-col items-center h-screen">
             <Board squares={history[stepNumber]} onClick={handleClick} />
-            <div style={styles}>
+            <div>
                 <p>{winner ? "Winner:" + winner : "Next Player: " + (xIsNext ? 'X' : 'O')}</p>
                 {renderMoves()}
             </div>
-        </>
+        </div>
 
     )
 }
